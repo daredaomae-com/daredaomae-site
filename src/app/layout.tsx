@@ -9,7 +9,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "誰だお前",
-  description: "誰だお前 - Discordサーバー",
+  description: "誰だお前 - サーバータグ「誰だお前」が貰える雑談Discordサーバー",
   generator: "v0.app",
   appleWebApp: {
     title: "誰だお前",
@@ -31,7 +31,28 @@ export const metadata: Metadata = {
     ],
     shortcut: ["/favicons/favicon.ico"],
   },
-  manifest: "favicons/site.webmanifest"
+  manifest: "favicons/site.webmanifest",
+
+  openGraph: {
+    title: "誰だお前",
+    description: "誰だお前 - サーバータグ「誰だお前」が貰える雑談Discordサーバー",
+    url: "https://daredaomae.com",
+    siteName: "誰だお前",
+    images: [
+      {
+        url: "/favicons/web-app-manifest-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "誰だお前のアイコン",
+      }
+    ],
+    locale: "ja_JP",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary"
+  }
 }
 
 export default function RootLayout({
