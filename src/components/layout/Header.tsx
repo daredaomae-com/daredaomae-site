@@ -26,7 +26,7 @@ export default function Header() {
             サーバーの特徴
           </Link>
           <Link
-            href="#official-server"
+            href="#join-server"
             className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors duration-300"
           >
             Discordサーバー
@@ -38,7 +38,7 @@ export default function Header() {
           size="lg"
           className="bg-primary text-primary-foreground hover:bg-primary/80 transition-all duration-300"
         >
-          <Link href="/#official-server">サーバに参加する<ArrowRight/></Link>
+          <Link href="/#join-server">サーバに参加する<ArrowRight/></Link>
         </Button>
       </div>
     </header>
