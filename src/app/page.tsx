@@ -120,7 +120,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="pointer-events-none absolute bottom-0 left-1/2 w-3/4 -translate-x-1/2 border-b border-border" />
+        <div className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-6xl -translate-x-1/2 border-b border-border" />
       </section>
 
       <section id="profile" className="py-20 relative">
