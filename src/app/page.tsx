@@ -50,6 +50,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-7xl -translate-x-1/2 border-b border-border" />
       </section>
 
       <section id="features" className="py-20 relative">
@@ -92,6 +94,8 @@ export default function Home() {
             ))}
           </div>
         </div>
+
+        <div className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-7xl -translate-x-1/2 border-b border-border" />
       </section>
 
       <section id="join-server" className="py-20 bg-background">
