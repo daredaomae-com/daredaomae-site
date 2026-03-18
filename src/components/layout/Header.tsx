@@ -31,6 +31,12 @@ export default function Header() {
           >
             Discordサーバー
           </Link>
+          <Link
+            href="#profile"
+            className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors duration-300"
+          >
+            プロフィール
+          </Link>
         </nav>
 
         <Button

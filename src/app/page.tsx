@@ -7,6 +7,8 @@ import Header from "@/components/layout/Header"
 import Footer from "@/components/layout/Footer"
 
 const SERVER_INVITE = process.env.NEXT_PUBLIC_SERVER_INVITE || "#"
+const PROFILE_DISCORD = process.env.NEXT_PUBLIC_PROFILE_DISCORD || "#"
+const PROFILE_X = process.env.NEXT_PUBLIC_PROFILE_X || "#"
 
 export default function Home() {
   return (
@@ -51,7 +53,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-7xl -translate-x-1/2 border-b border-border" />
+        <div className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-6xl -translate-x-1/2 border-b border-border" />
       </section>
 
       <section id="features" className="py-20 relative">
@@ -95,10 +97,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-7xl -translate-x-1/2 border-b border-border" />
+        <div className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-6xl -translate-x-1/2 border-b border-border" />
       </section>
 
-      <section id="join-server" className="py-20 bg-background">
+      <section id="join-server" className="py-20 relative">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="flex flex-col gap-8 items-center">
             <div className="w-full max-w-2xl text-center">
@@ -114,6 +116,42 @@ export default function Home() {
               >
                 <Link href={SERVER_INVITE}><img src="/discord.svg" alt="Discord Logo" width={24} height={24} />Discordサーバーに参加する<ArrowUpRight/></Link>
               </Button>
+            </div>
+          </div>
+        </div>
+
+        <div className="pointer-events-none absolute bottom-0 left-1/2 w-3/4 -translate-x-1/2 border-b border-border" />
+      </section>
+
+      <section id="profile" className="py-20 relative">
+        <div className="container mx-auto px-4">
+
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+              プロフィール
+            </h2>
+          </div>
+
+          <div className="glass-effect p-8 max-w-md mx-auto border border-primary/50 transition-all duration-300 hover:-translate-y-2 text-center">
+            <img className="w-48 h-48 mx-auto mb-4" src="/profile.jpg" alt="Profile Image" width={48} height={48} />
+
+            <h3 className="font-bold text-xl mb-2 text-foreground">
+              きゃろっと
+            </h3>
+
+            <p className="text-sm text-foreground/60">
+              趣味: Discord<br/>
+              一言: なかよくしようね
+            </p>
+
+            <div className="mt-6 flex justify-center gap-6">
+              <Link href={PROFILE_DISCORD}>
+                <img src="/discord.svg" alt="Discord Logo" width={28} height={28} />
+              </Link>
+
+              <Link href={PROFILE_X}>
+                <img src="/x.svg" alt="X Logo" width={22} height={22} />
+              </Link>
             </div>
           </div>
         </div>
