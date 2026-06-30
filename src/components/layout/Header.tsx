@@ -19,7 +19,7 @@ export default function Header() {
         </div>
 
         <nav className="hidden gap-8 md:flex">
-          <Link
+          {/*<Link
             href="#features"
             className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors duration-300"
           >
@@ -30,7 +30,7 @@ export default function Header() {
             className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors duration-300"
           >
             Discordサーバー
-          </Link>
+          </Link>*/}
           <Link
             href="#profile"
             className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors duration-300"

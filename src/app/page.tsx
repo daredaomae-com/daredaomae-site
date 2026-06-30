@@ -31,7 +31,7 @@ export default function Home() {
               </h1>
             </div>
             <p className="text-lg text-foreground/60 max-w-2xl mx-auto text-balance leading-relaxed">
-              サーバータグ「誰だお前」が貰える雑談サーバー
+              {/*サーバータグ「誰だお前」が貰える*/}雑談サーバー
             </p>
             <div className="flex gap-4 justify-center flex-wrap pt-4">
               <Button
@@ -41,21 +41,21 @@ export default function Home() {
               >
                 <Link href="/#join-server">サーバに参加する<ArrowRight/></Link>
               </Button>
-              <Button
+              {/*<Button
                 asChild
                 size="lg"
                 variant="outline"
                 className="border border-primary/30 text-primary hover:bg-primary/5 transition-all duration-300 backdrop-blur bg-transparent"
               >
                 <Link href="#features">詳しく見る</Link>
-              </Button>
+              </Button>*/}
             </div>
           </div>
         </div>
 
         <div className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-6xl -translate-x-1/2 border-b border-border" />
       </section>
-
+      {/*
       <section id="features" className="py-20 relative">
         <div className="container mx-auto max-w-6xl px-4">
           <div className="text-center mb-16">
@@ -122,7 +122,7 @@ export default function Home() {
 
         <div className="pointer-events-none absolute bottom-0 left-1/2 w-full max-w-6xl -translate-x-1/2 border-b border-border" />
       </section>
-
+      */}
       <section id="profile" className="py-20 relative">
         <div className="container mx-auto px-4">
 
